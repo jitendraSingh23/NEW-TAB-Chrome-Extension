@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+}
+
+#favorites-container {
+  position: fixed;
+  z-index: 2;
+  max-height: 90vh;
+  width: 90vw;
+  pointer-events: auto;
+}
+
+#favorites-grid {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  gap: 15px;
+  max-height: 90vh;
+  padding: 10px;
+  pointer-events: auto;
+}
+
+.favorite-item {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 100px;
+  margin-right: 15px;
+  pointer-events: auto;
+}
+
+.favorite-item:hover {
+  transform: scale(1.05);
+}
+
+.favorite-item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.favorite-item span {
+  color: white;
+  font-size: 12px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#topsites-container {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+  max-height: 90vh;
+  /* width: 200px; */
+  pointer-events: auto;
+}
+
+#topsites-grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  pointer-events: auto;
+}
+
+.topsite-item {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 100px;
+  pointer-events: auto;
+}
+
+.topsite-item:hover {
+  transform: scale(1.05);
+}
+
+.topsite-item img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+.topsite-item span {
+  color: white;
+  font-size: 12px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.clock {
+  position: absolute;
+  top: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
+  color: white;
+  font-size: 12px;
+  pointer-events: auto;
+}
+.time {
+  font-family: "Tourney", serif;
+  font-weight: 300;
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+}
+.day {
+  font-family: "Tourney", serif;
+  font-weight: 100;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}

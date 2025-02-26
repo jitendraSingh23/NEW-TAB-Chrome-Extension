@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Custom New Tab",
+  "version": "1.0",
+  "description": "Customize your new tab page",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/newtab/newtab.html"
+  },
+  "permissions": ["tabs", "storage", "topSites"],
+  "host_permissions": ["*://*/*"]
+}
