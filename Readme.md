@@ -7,8 +7,10 @@ A feature-rich Chrome extension that replaces the default new tab page with a be
 
 
 ## Screenshots
+![Screenshot 2025-02-26 164921](https://github.com/user-attachments/assets/bc9b8037-1ca8-4d58-8f12-f03d3a4e73f9)
+![Screenshot 2025-02-26 164937](https://github.com/user-attachments/assets/a804caf7-bdf1-47d0-b556-0b0179edf4c0) ![Screenshot 2025-02-26 164950](https://github.com/user-attachments/assets/4671813f-aea3-4a9e-8fd2-a19293274172)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 
 
 ## Features
