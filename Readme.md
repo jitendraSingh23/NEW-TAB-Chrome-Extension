@@ -50,3 +50,4 @@ git clone https://github.com/jitendraSingh23/NEW-TAB---Chrome-Extension.git
 
 If you have any feedback, please reach out to us at work.jitendrasingh@gmail.com
 
+# NEW-TAB-Chrome-Extension

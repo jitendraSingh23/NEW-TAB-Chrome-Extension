@@ -10,20 +10,19 @@ function loadFavorites() {
       const slicedTitle = favorite.title.slice(0, 15);
       favoriteElement.className = "favorite-item";
       favoriteElement.innerHTML = `
-        <img src="${favorite.icon || "icons/icon128.png"}" alt="${
-        favorite.title
-      }">
+        <img src="${favorite.icon || "icons/icon128.png"}" alt="${favorite.title}">
         <span>${slicedTitle}</span>
       `;
       favoriteElement.addEventListener("click", () => {
-        chrome.tabs.create({ url: favorite.url });
+        window.location.href = favorite.url; // Open in the same tab
       });
       favoritesGrid.appendChild(favoriteElement);
     });
   });
 }
 
-// Add this function after loadFavorites()
+
+
 function loadTopSites() {
   if (!chrome.topSites) {
     console.error("chrome.topSites API not available");
@@ -32,7 +31,7 @@ function loadTopSites() {
 
   try {
     chrome.topSites.get(function (sites) {
-      console.log("Top sites:", sites); // Debug log
+      console.log("Top sites:", sites); 
 
       const topSitesGrid = document.getElementById("topsites-grid");
       if (!topSitesGrid) {
@@ -65,7 +64,7 @@ function loadTopSites() {
         `;
 
         siteElement.addEventListener("click", () => {
-          chrome.tabs.create({ url: site.url });
+          window.location.href = site.url; // Open in the same tab
         });
 
         topSitesGrid.appendChild(siteElement);
